@@ -1,0 +1,137 @@
+:root {
+  --red: rgb(255, 20, 36);
+  --purple: rgb(173, 8, 155);
+  --magenta: rgb(223, 25, 74);
+
+  --bg-color-1: rgb(14, 14, 14);
+  --bg-color-2: rgb(20, 20, 20);
+}
+
+body {
+  background: linear-gradient(to bottom, var(--bg-color-1), var(--bg-color-2));
+  display: flex;
+  /* width: 120rem; */
+  margin: auto;
+  height: 67.5rem;
+  max-width: 120rem;
+  max-height: 67.5rem;
+  padding: 6.25rem;
+  justify-content: center;
+  align-items: center;
+  gap: 6.25rem;
+  flex-wrap: wrap;
+  color: #fff;
+  overflow: hidden;
+}
+
+h1 {
+  color: #fff;
+  font-family: Inter;
+  font-size: 8rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: 0.4rem;
+  width: fit-content;
+  height: fit-content;
+}
+
+@keyframes background-pan {
+    from {
+      background-position: 0% center;
+    }
+  
+    to {
+      background-position: 200% center;
+    }
+}
+
+h1 > .gradientHeading {
+  font-family: Inter;
+  font-size: 8rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: 0.4rem;
+  animation: background-pan 3s linear infinite;
+  background: linear-gradient(to right, var(--red), var(--magenta), var(--purple), var(--red));
+  background-size: 200%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: fit-content;
+  height: fit-content;
+}
+
+h2 {
+  color: #fff;
+  text-align: center;
+  font-family: Inter;
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.1125rem;
+  width: fit-content;
+  height: fit-content;
+}
+
+h2 > .coloredHeading {
+  color: var(--magenta);
+  font-family: Inter;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 4.8px;
+}
+
+.descText {
+    width: 58rem;
+    height: 6.875rem;
+    color: #6A6A6A;
+    font-family: Inter;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: -0.1rem;
+}
+
+div > .mainIntro {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.625rem;
+  justify-content: left;
+}
+
+div > .socialsSection {
+  display: inline-flex;
+  padding: 0.625rem 2.75rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4.6875rem;
+}
+
+div > .socialsIconContainer {
+  display: flex;
+  width: 32.8125rem;
+  height: 4.6875rem;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 4.6875rem;
+}
+
+svg > .socialsIcon {
+  width: 75px;
+  height: 75px;
+  flex-shrink: 0;
+}
+
+img > .zygBanner {
+  border-radius: 30px;
+  background: lightgray 50% / cover no-repeat;
+  box-shadow: 0px 0px 250px 10px rgba(255, 255, 255, 0.06);
+}
