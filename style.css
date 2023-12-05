@@ -9,31 +9,31 @@
 
 body {
   background: linear-gradient(to bottom, var(--bg-color-1), var(--bg-color-2));
-  display: flex;
-  margin: auto;
-  max-width: 120rem;
-  max-height: 67.5rem;
-  padding: 6.25rem;
-  /* justify-content: center; */
+  display: grid;
+  width: 100vw;
+  height: 100vh;
+  max-width: 90vw;
+  max-height: 90vh;
+  padding: 50px;
   align-items: center;
-  gap: 6.25rem;
-  flex-wrap: wrap;
+  gap: 150px;
   color: #fff;
   overflow: hidden;
+  margin: auto;
 }
 
 h1 {
   color: #fff;
   font-family: Inter;
-  font-size: 8rem;
+  font-size: 128px;
   font-style: normal;
   font-weight: 800;
   line-height: normal;
-  letter-spacing: 0.4rem;
+  letter-spacing: 6.4px;
   width: fit-content;
   height: fit-content;
   margin-block-start: 0px;
-  margin-block-end: 3.5rem;
+  margin-block-end: 0px;
 }
 
 @keyframes background-pan {
@@ -48,11 +48,11 @@ h1 {
 
 h1 > .gradientHeading {
   font-family: Inter;
-  font-size: 8rem;
+  font-size: 128px;
   font-style: normal;
   font-weight: 800;
   line-height: normal;
-  letter-spacing: 0.4rem;
+  letter-spacing: 6.4px;
   animation: background-pan 3s linear infinite;
   background: linear-gradient(to right, var(--red), var(--magenta), var(--purple), var(--red));
   background-size: 200%;
@@ -65,22 +65,15 @@ h1 > .gradientHeading {
 
 h2 {
   color: #fff;
-  text-align: center;
   font-family: Inter;
-  font-size: 2.5rem;
+  font-size: 25px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  letter-spacing: 1.1125rem;
-  width: fit-content;
+  letter-spacing: 25px;
   height: fit-content;
   margin-block-start: 0px;
-  margin-block-end: 0rem;
-}
-
-.socialsSection > h2 {
-  margin-block-start: 0px;
-  margin-block-end: 4.5rem;
+  margin-block-end: 0px;
 }
 
 .coloredHeading {
@@ -93,50 +86,47 @@ h2 {
   letter-spacing: 4.8px;
   margin-block-start: 0px;
   margin-block-end: 0px;
+  text-align: left;
 }
 
 .descText {
-    width: 58rem;
-    height: 6.875rem;
-    color: #6A6A6A;
-    font-family: Inter;
-    font-size: 2.5rem;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
-    letter-spacing: -0.1rem;
+  color: #6A6A6A;
+  font-family: Inter;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: -1.6px;
 }
 
 div > .mainIntro {
-  display: inline-flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 0.625rem;
-  justify-content: left;
-  margin-block-start: 0px;
-  margin-block-end: 0px;
+  text-align: left;
+  justify-items: left;
 }
 
-div > .socialsSection {
-  display: inline-flex;
-  padding: 0.625rem 2.75rem;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 4.6875rem;
+.socialsSection {
+  align-self: end;
+  justify-self: center;
+  text-align: center;
+  text-shadow: 0px 2px 5px white;
 }
 
 div > .socialsIconContainer {
   display: flex;
-  width: 32.8125rem;
-  height: 4.6875rem;
+  width: 525px;
+  height: 75px;
   justify-content: center;
   align-items: flex-start;
-  gap: 4.6875rem;
+  gap: 75px;
+  margin-block-start: 10px;
 }
 
 svg > .socialsIcon {
   width: 75px;
   height: 75px;
   flex-shrink: 0;
+}
+
+#image {
+  opacity: 1;
 }
